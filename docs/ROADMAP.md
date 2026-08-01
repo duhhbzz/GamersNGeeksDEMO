@@ -6,7 +6,7 @@
 
 **Current Phase**
 
-🟢 Planning & Design
+🚧 Sprint 1 — UI Framework
 
 ---
 
@@ -15,10 +15,11 @@
 | Phase | Status |
 |--------|:------:|
 | Repository Setup | ✅ Complete |
-| Project Documentation | 🚧 In Progress |
+| Project Documentation | ✅ Complete |
 | Homepage Design | ⏳ Planned |
-| Component Library | ⏳ Planned |
-| Responsive Layout | ⏳ Planned |
+| UI Framework | 🚧 In Progress |
+| Component Library | 🚧 In Progress |
+| Responsive Layout | 🚧 In Progress |
 | Demo Website | ⏳ Planned |
 | Client Presentation | ⏳ Planned |
 | Shopify Migration | ⏳ Future |

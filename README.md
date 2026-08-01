@@ -1,81 +1,72 @@
 <p align="center">
-  <img src="../assets/branding/logos/gng_logo_nooutline-original.png" alt="Gamers N Geeks Logo" width="550">
+  <img src="./assets/branding/logos/gng_logo_nooutline-original.png" alt="Gamers N Geeks Logo" width="500">
 </p>
 
-<h1 align="center">Gamers N Geeks Demo</h1>
+# Gamers N Geeks Modern Website Redesign
 
-<p align="center">
-  <strong>A modern redesign concept for the Gamers N Geeks website.</strong>
-</p>
+> A modern Shopify redesign concept focused on community, usability, and performance.
 
-<p align="center">
+![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-72C341?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/NEXT.JS-16-black?style=for-the-badge&logo=nextdotjs)
+![React](https://img.shields.io/badge/REACT-19-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-READY-3178C6?style=for-the-badge&logo=typescript)
 
-![Status](https://img.shields.io/badge/Status-In%20Development-72C341?style=for-the-badge)
-
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs)
-
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-
-![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&logo=typescript)
-
-</p>
+**Framework:** Next.js 16 • **Language:** TypeScript • **Styling:** Tailwind CSS • **Purpose:** Shopify Frontend Modernization
 
 ---
 
 # 📖 Overview
 
-This repository contains a complete redesign concept for the **Gamers N Geeks** website.
+This repository contains a complete modernization concept for the **Gamers N Geeks** website.
 
-The objective is to modernize the online experience while preserving the store's existing infrastructure and services.
+Rather than replacing Shopify or rebuilding the backend, the objective is to improve the customer experience while preserving the existing Shopify infrastructure, TCGPlayer Pro integration, inventory management, and checkout workflows.
 
-Rather than replacing Shopify or rebuilding the backend, this project focuses on creating a polished, modern frontend that can later be migrated into the existing ecosystem.
-
----
-
-# 🎯 Project Goals
-
-- Modern, responsive design
-- Mobile-first development
-- Improve event visibility
-- Highlight community activities
-- Better product discovery
-- Faster navigation
-- Preserve Shopify backend
-- Preserve TCGPlayer Pro integration
-- Maintain familiar branding
-- Improve overall user experience
+The project serves as both a client proposal and a portfolio-quality case study demonstrating modern UX, responsive design, and frontend best practices.
 
 ---
 
-# 🛠 Technology Stack
+# ✨ Goals
 
-| Technology | Purpose |
-|------------|---------|
-| Next.js 16 | React Framework |
-| React 19 | UI Library |
-| TypeScript | Type Safety |
-| Tailwind CSS | Styling |
-| ESLint | Code Quality |
-| Git | Version Control |
-| GitHub | Repository Hosting |
+- Modernize the customer experience
+- Preserve the Shopify ecosystem
+- Improve navigation
+- Improve product discovery
+- Highlight community events
+- Build mobile-first
+- Improve accessibility
+- Improve performance
 
 ---
 
-# 📁 Repository Structure
+# 🚧 Current Progress
+
+| Phase | Status |
+|--------|:------:|
+| Repository Setup | ✅ |
+| Project Documentation | ✅ |
+| UX Research | ✅ |
+| Design System | ✅ |
+| Homepage Design | 🚧 |
+| Component Library | ⏳ |
+| Responsive Development | ⏳ |
+| Demo Deployment | ⏳ |
+
+---
+
+# 📂 Repository Structure
 
 ```text
 GamersNGeeks
 │
 ├── app/
 │   ├── public/
-│   ├── src/
-│   ├── package.json
-│   └── README.md
+│   └── src/
 │
 ├── assets/
 │   ├── branding/
 │   ├── concepts/
 │   ├── inspiration/
+│   ├── logos/
 │   ├── screenshots/
 │   └── wireframes/
 │
@@ -90,120 +81,90 @@ GamersNGeeks
 
 ---
 
-# 🚧 Current Phase
+# 📚 Documentation
 
-**Sprint 0 — Project Initialization**
-
-## Completed
-
-- [x] Repository created
-- [x] GitHub connected
-- [x] SSH configured
-- [x] Next.js installed
-- [x] React configured
-- [x] Tailwind configured
-- [x] TypeScript configured
-- [x] Development environment running
+| Document | Purpose |
+|----------|---------|
+| PROJECT_VISION.md | Defines the overall vision and goals |
+| DESIGN_SYSTEM.md | Design language and UI standards |
+| SHOPIFY_AUDIT.md | Analysis of the existing website |
+| ROADMAP.md | Development milestones |
+| MIGRATION_PLAN.md | Future Shopify implementation strategy |
+| ARCHITECTURE.md | Technical architecture and coding standards |
+| CLIENT_NOTES.md | Ongoing observations and client feedback |
+| DESIGN_TOKENS.md | Shared colors, spacing, radii, shadows, and motion values |
 
 ---
 
-# 🗺 Roadmap
+# 🛠 Technology Stack
 
-## Phase 1 — Foundation
-
-- [x] Project setup
-- [x] GitHub repository
-- [ ] Design System
-- [ ] Component Library
-
----
-
-## Phase 2 — Homepage
-
-- [ ] Header
-- [ ] Hero
-- [ ] Featured Categories
-- [ ] Events
-- [ ] Featured Products
-- [ ] Footer
-
----
-
-## Phase 3 — Shopping
-
-- [ ] Collection Pages
-- [ ] Product Pages
-- [ ] Search Experience
-
----
-
-## Phase 4 — Community
-
-- [ ] Events Calendar
-- [ ] Discord Integration
-- [ ] Social Links
-- [ ] Store Information
-
----
-
-## Phase 5 — Polish
-
-- [ ] Mobile Optimization
-- [ ] Accessibility Review
-- [ ] Performance Optimization
-- [ ] Animation Pass
-
----
-
-## Phase 6 — Presentation
-
-- [ ] Client Demo
-- [ ] Feedback Collection
-- [ ] Shopify Migration Plan
+| Technology | Purpose |
+|------------|---------|
+| Next.js 16 | Frontend Framework |
+| React 19 | UI Library |
+| TypeScript | Type Safety |
+| Tailwind CSS | Styling |
+| GitHub | Source Control |
 
 ---
 
 # 🎨 Design Philosophy
 
-This project follows a few guiding principles:
+Every design decision follows one guiding principle:
 
-- Community first
-- Products second
-- Mobile before desktop
-- Performance over unnecessary effects
-- Preserve existing branding
-- Respect the existing customer base
+> **Build a website that feels like walking into an amazing local game store.**
+
+The redesign emphasizes:
+
+- Community before commerce
+- Mobile-first experiences
+- Clear navigation
+- Fast performance
+- Modern visuals
+- Accessibility
+- Respect for the existing brand
 
 ---
 
-# 📚 Documentation
+# 🚀 Planned Features
 
-Additional documentation can be found in:
+- Responsive homepage
+- Sticky navigation
+- Mega menu
+- Event hub
+- Featured collections
+- Product spotlight sections
+- Community showcase
+- Store information
+- Improved search
+- Better mobile navigation
+- Accessibility improvements
+- Performance optimization
+
+---
+
+# 🗺 Roadmap
 
 ```text
-/docs
+Sprint 0  ✅ Foundation
+Sprint 1  🚧 UI Framework
+Sprint 2  ⏳ Homepage
+Sprint 3  ⏳ Shopping Experience
+Sprint 4  ⏳ Community & Events
+Sprint 5  ⏳ Mobile Polish
+Sprint 6  ⏳ Client Presentation
 ```
-
-Including:
-
-- Project Vision
-- Shopify Audit
-- Design System
-- Roadmap
-- Client Notes
 
 ---
 
 # ⚠ Disclaimer
 
-This repository is an independent redesign concept.
+This repository contains an independent redesign concept created for educational, portfolio, and demonstration purposes.
 
-It is **not affiliated with or endorsed by Gamers N Geeks**.
+All trademarks, logos, product names, and intellectual property belong to their respective owners.
 
-All trademarks, logos, product names, artwork, and intellectual property belong to their respective owners and are used only for demonstration and educational purposes.
+No affiliation with or endorsement by **Gamers N Geeks** is implied.
 
 ---
 
-<p align="center">
-Built with ⚔️MIGHT & Passion👾 using Next.js, React and TypeScript.
-</p>
+**Built with ⚔️Passion & Might👾 using Next.js, React, TypeScript, and Tailwind CSS.**

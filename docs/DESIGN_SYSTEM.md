@@ -55,89 +55,19 @@ Think:
 
 # Color Palette
 
-## Primary
+The authoritative color values and semantic names are defined in `DESIGN_TOKENS.md` and synchronized with `app/src/app/globals.css`.
 
-Gamers N Geeks Green
+Components must use those shared tokens rather than hard-coded color values.
 
-`#72C341`
+The interface supports coordinated light and dark themes. First-time visitors follow their operating-system preference, while a manual selection persists across visits.
 
----
-
-## Background
-
-Dark
-
-`#0F1115`
-
----
-
-## Surface
-
-Cards
-
-`#1A1D24`
-
----
-
-## Elevated Surface
-
-`#252A33`
-
----
-
-## Border
-
-`#343A46`
-
----
-
-## Text
-
-Primary
-
-`#FFFFFF`
-
-Secondary
-
-`#C8CDD6`
-
-Muted
-
-`#8A94A6`
-
----
-
-## Success
-
-`#4CAF50`
-
----
-
-## Warning
-
-`#FFB547`
-
----
-
-## Error
-
-`#F44336`
+Use the original black-text logo in light mode and the white-text DARKMODE logo in dark mode. Do not recolor either logo with CSS filters.
 
 ---
 
 # Gradients
 
-Green Accent
-
-```
-#72C341 → #4FA328
-```
-
-Dark Hero
-
-```
-#0F1115 → #181C24
-```
+Gradients must be composed from the authoritative color tokens. Add new gradient-specific tokens to `DESIGN_TOKENS.md` before using them broadly.
 
 ---
 
@@ -147,13 +77,13 @@ Dark Hero
 
 Font:
 
-**Geist**
+**Inter**
 
 Fallback:
 
 ```
-Inter
 Segoe UI
+Arial
 sans-serif
 ```
 
@@ -199,21 +129,9 @@ Small Text
 
 # Border Radius
 
-Buttons
+Use the radius tokens defined in `DESIGN_TOKENS.md`.
 
-12px
-
-Cards
-
-18px
-
-Inputs
-
-12px
-
-Badges
-
-999px
+Cards use `--radius-xl` (`16px`). Buttons and inputs use the token appropriate to their size and context. Pill-shaped badges may use a fully rounded value when their form requires it.
 
 ---
 
@@ -231,7 +149,9 @@ Hover should lift the card slightly.
 
 # Spacing System
 
-8px grid
+Use a 4px base spacing scale.
+
+Use an 8px rhythm for most layout spacing. Values such as 4px and 12px remain available for compact controls and fine-grained alignment.
 
 Common spacing
 
@@ -320,9 +240,9 @@ Price
 
 Availability
 
-Quick Add
+Optional Quick Add
 
-Wishlist
+Optional Wishlist
 
 ---
 
@@ -358,11 +278,11 @@ Search always visible
 
 Mobile
 
-Bottom navigation
-
-Hamburger
+Hamburger drawer
 
 Large touch targets
+
+Do not use bottom navigation during Sprint 1.
 
 ---
 
@@ -404,6 +324,8 @@ Visible focus states.
 Large tap targets.
 
 Readable contrast.
+
+Theme controls must expose an accessible label that describes the available action. Interactive states must meet WCAG AA in both themes.
 
 ---
 
