@@ -164,8 +164,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-border pt-5 text-xs text-text-secondary sm:flex-row sm:items-center sm:justify-between">
-          <p>© {currentYear} Gamers N Geeks. All rights reserved.</p>
+        <div className="mt-10 border-t border-border pt-5">
+          <div className="rounded-lg border border-border bg-background p-4 text-xs leading-5 text-text-secondary sm:flex sm:items-start sm:justify-between sm:gap-8">
+            <div className="max-w-3xl">
+              <p className="font-bold uppercase tracking-[0.1em] text-text-primary">Gamers N Geeks Website Concept</p>
+              <p className="mt-1">This is a non-production interactive redesign demonstrating a modern Shopify storefront. Images and branding remain property of Gamers N Geeks.</p>
+            </div>
+            <p className="mt-3 shrink-0 sm:mt-0 sm:text-right">
+              Created by<br />
+              <a href="mailto:contact@davidtroi.com" className="font-bold text-text-link hover:text-text-link-highlight focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-focus">David Sweatt</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-5 flex flex-col gap-3 text-xs text-text-secondary sm:flex-row sm:items-center sm:justify-between">
+          <p>© {currentYear} Gamers N Geeks. Concept presentation only.</p>
           <nav aria-label="Legal navigation">
             <ul className="flex flex-wrap gap-x-5 gap-y-2">
               {legalLinks.map((link) => (
