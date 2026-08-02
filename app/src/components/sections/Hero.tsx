@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight, Clock, UsersRound } from "lucide-react";
 import { Container } from "@/components/layout/Container";
+import { upcomingEvents } from "@/lib/events";
 
 export function Hero() {
   return (
     <section className="bg-background-alt sm:py-6 lg:py-8" aria-labelledby="hero-heading">
-      <div className="relative isolate mx-auto min-h-[27rem] w-full max-w-7xl overflow-hidden sm:min-h-[30rem] sm:rounded-xl lg:min-h-[32rem]">
+      <div className="relative isolate mx-auto min-h-[43rem] w-full max-w-7xl overflow-hidden sm:min-h-[42rem] sm:rounded-xl lg:min-h-[40rem]">
         <Image
           src="/images/store/store-event-hall.png"
           alt="Gamers gathered around tables in the Gamers N Geeks event hall"
@@ -17,7 +19,7 @@ export function Hero() {
         />
         <div className="hero-overlay absolute inset-0" aria-hidden="true" />
 
-        <Container className="relative flex min-h-[27rem] min-w-0 items-end py-8 sm:min-h-[30rem] sm:items-center sm:py-12 lg:min-h-[32rem]">
+        <Container className="relative flex min-h-[43rem] min-w-0 flex-col justify-between gap-8 py-8 sm:min-h-[42rem] sm:py-10 lg:min-h-[40rem] lg:py-12">
           <div className="min-w-0 max-w-xl text-white">
             <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-brand sm:mb-3 sm:text-sm">Your local game store</p>
             <h1 id="hero-heading" className="text-[2rem] font-bold leading-[1.08] tracking-tight min-[400px]:text-4xl sm:text-5xl lg:text-6xl">
@@ -35,6 +37,44 @@ export function Hero() {
               </Link>
             </div>
           </div>
+
+          <section
+            className="rounded-xl border border-white/20 bg-[#101312]/90 p-4 text-white shadow-lg backdrop-blur-md sm:p-5"
+            aria-labelledby="hero-events-heading"
+          >
+            <div className="flex items-center justify-between gap-4">
+              <h2 id="hero-events-heading" className="text-lg font-bold uppercase tracking-wide sm:text-xl">
+                Upcoming Events
+              </h2>
+              <Link href="/events" className="inline-flex min-h-11 shrink-0 items-center gap-2 text-xs font-bold uppercase tracking-wide text-brand hover:text-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-focus sm:text-sm">
+                <span className="hidden min-[390px]:inline">View all events</span>
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
+            </div>
+            <div className="mt-3 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 lg:grid lg:grid-cols-4 lg:overflow-visible lg:pb-0">
+              {upcomingEvents.map((event) => (
+                <Link
+                  key={event.id}
+                  href={`/events#${event.id}`}
+                  aria-label={`View details for ${event.title}`}
+                  className="group grid min-w-[15.5rem] snap-start grid-cols-[3.5rem_1fr] gap-3 rounded-lg border border-white/15 bg-black/35 p-3 transition-colors hover:border-brand hover:bg-black/55 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-focus sm:min-w-[17rem] lg:min-w-0"
+                >
+                  <time dateTime={event.dateTime} className="flex flex-col items-center border-r border-white/20 pr-3 text-center">
+                    <span className="text-xs font-bold uppercase text-brand">{event.month}</span>
+                    <span className="mt-1 text-2xl font-extrabold leading-none">{event.day}</span>
+                  </time>
+                  <span className="min-w-0">
+                    <span className="block text-[0.6875rem] font-bold uppercase tracking-wide text-brand">{event.eventType}</span>
+                    <span className="mt-1 block font-bold leading-tight">{event.title}</span>
+                    <span className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[0.6875rem] font-medium text-brand">
+                      <span className="inline-flex items-center gap-1"><Clock className="size-3.5" aria-hidden="true" />{event.displayTime}</span>
+                      <span className="inline-flex items-center gap-1"><UsersRound className="size-3.5" aria-hidden="true" />{event.status.label}</span>
+                    </span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
         </Container>
       </div>
     </section>

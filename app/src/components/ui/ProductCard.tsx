@@ -94,12 +94,14 @@ export function ProductCard({ product, variant = "grid" }: ProductCardProps) {
         aria-label={product.visualAlt}
         className={`product-visual product-visual--${product.visual} relative flex aspect-[4/3] items-center justify-center overflow-hidden border-b border-border`}
       >
-        <div className="product-visual__texture absolute inset-0" aria-hidden="true" />
-        <Icon
-          aria-hidden="true"
-          className="relative size-16 text-brand sm:size-20"
-          strokeWidth={1.25}
-        />
+        {product.imageSrc ? (
+          <Image src={product.imageSrc} alt="" fill sizes="(max-width: 640px) 100vw, 33vw" className="object-contain p-3" />
+        ) : (
+          <>
+            <div className="product-visual__texture absolute inset-0" aria-hidden="true" />
+            <Icon aria-hidden="true" className="relative size-16 text-brand sm:size-20" strokeWidth={1.25} />
+          </>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col p-4">
