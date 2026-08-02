@@ -171,7 +171,7 @@ export function Footer() {
               <p className="mt-1">This is a non-production interactive redesign demonstrating a modern Shopify storefront. Images and branding remain property of Gamers N Geeks.</p>
             </div>
             <p className="mt-3 shrink-0 sm:mt-0 sm:text-right">
-              Created by<br />
+              Designed & Developed by<br />
               <a href="mailto:contact@davidtroi.com" className="font-bold text-text-link hover:text-text-link-highlight focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-focus">David Sweatt</a>
             </p>
           </div>
