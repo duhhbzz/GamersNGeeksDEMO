@@ -20,7 +20,7 @@ export function Header() {
           aria-label="Gamers N Geeks home"
           className="shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-focus"
         >
-          <span className="block w-44 sm:w-52 lg:w-56">
+          <span className="block w-32 sm:w-52 lg:w-56">
             <Image
               src="/images/brand/gamers-n-geeks-logo-light.png"
               width={logoDimensions.width}
@@ -40,7 +40,7 @@ export function Header() {
           </span>
         </Link>
 
-        <div className="flex items-center gap-1 lg:hidden">
+        <div className="flex min-w-0 items-center gap-0.5 sm:gap-1 lg:hidden">
           <ThemeToggle />
           <Link
             href="/cart"

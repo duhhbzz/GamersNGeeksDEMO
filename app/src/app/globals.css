@@ -199,6 +199,113 @@ p {
   margin: 0;
 }
 
+.hero-overlay {
+  background:
+    linear-gradient(to top, rgb(0 0 0 / 0.92) 0%, rgb(0 0 0 / 0.7) 48%, rgb(0 0 0 / 0.12) 100%),
+    linear-gradient(to right, rgb(0 0 0 / 0.96) 0%, rgb(0 0 0 / 0.82) 52%, rgb(0 0 0 / 0.12) 100%);
+}
+
+.category-card {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-brand) 14%, var(--color-surface)) 0%,
+    var(--color-background) 72%
+  );
+}
+
+.category-card--miniatures {
+  background: linear-gradient(155deg, var(--color-surface-highlight) 0%, var(--color-background) 78%);
+}
+
+.category-card--board-games {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-brand) 11%, var(--color-surface)) 0%, var(--color-background) 76%);
+}
+
+.category-card--role-playing {
+  background: linear-gradient(160deg, var(--color-surface) 0%, var(--color-background) 72%);
+}
+
+.category-card--paint {
+  background: linear-gradient(125deg, color-mix(in srgb, var(--color-info) 12%, var(--color-surface)) 0%, var(--color-background) 76%);
+}
+
+.category-card--models {
+  background: linear-gradient(150deg, color-mix(in srgb, var(--color-warning) 8%, var(--color-surface)) 0%, var(--color-background) 78%);
+}
+
+.category-card__texture {
+  background-image:
+    radial-gradient(circle at 18% 22%, color-mix(in srgb, var(--color-brand) 16%, transparent), transparent 30%),
+    repeating-linear-gradient(135deg, transparent 0 18px, color-mix(in srgb, var(--color-text-primary) 3%, transparent) 18px 19px);
+}
+
+.product-visual {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-brand) 12%, var(--color-surface)) 0%,
+    var(--color-background) 78%
+  );
+}
+
+.product-visual--cards,
+.product-visual--board-games {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-info) 13%, var(--color-surface)) 0%,
+    var(--color-background) 78%
+  );
+}
+
+.product-visual--paint,
+.product-visual--models {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-warning) 9%, var(--color-surface)) 0%,
+    var(--color-background) 78%
+  );
+}
+
+.product-visual__texture,
+.community-highlight__texture {
+  background-image:
+    radial-gradient(circle at 20% 18%, color-mix(in srgb, var(--color-brand) 15%, transparent), transparent 34%),
+    repeating-linear-gradient(135deg, transparent 0 16px, color-mix(in srgb, var(--color-text-primary) 3%, transparent) 16px 17px);
+}
+
+.community-highlight {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--color-background) 96%, transparent),
+    color-mix(in srgb, var(--color-brand) 18%, var(--color-surface))
+  );
+}
+
+.community-highlight--painting,
+.community-highlight--release {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--color-background) 96%, transparent),
+    color-mix(in srgb, var(--color-warning) 12%, var(--color-surface))
+  );
+}
+
+.community-highlight--pokemon,
+.community-highlight--qualifier {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--color-background) 96%, transparent),
+    color-mix(in srgb, var(--color-info) 16%, var(--color-surface))
+  );
+}
+
+@media (min-width: 640px) {
+  .hero-overlay {
+    background:
+      linear-gradient(to right, rgb(0 0 0 / 0.98) 0%, rgb(0 0 0 / 0.88) 40%, rgb(0 0 0 / 0.32) 65%, transparent 100%),
+      linear-gradient(rgb(0 0 0 / 0.08), rgb(0 0 0 / 0.08));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

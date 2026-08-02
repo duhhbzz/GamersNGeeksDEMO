@@ -16,7 +16,7 @@
 |--------|:------:|
 | Repository Setup | ✅ Complete |
 | Project Documentation | ✅ Complete |
-| Homepage Design | ⏳ Planned |
+| Homepage Design | ✅ Demo Complete |
 | UI Framework | 🚧 In Progress |
 | Component Library | 🚧 In Progress |
 | Responsive Layout | 🚧 In Progress |
@@ -53,12 +53,16 @@
 
 ## Homepage
 
-- [ ] Hero section
-- [ ] Featured events
-- [ ] Featured collections
-- [ ] Community section
-- [ ] Newsletter
-- [ ] Footer
+- [x] Hero section
+- [x] Featured events
+- [x] Featured collections
+- [x] Community section
+- [x] Newsletter demo treatment
+- [x] Footer
+
+The homepage presentation is substantially complete for the redesign demo. Live
+Shopify, calendar, social-feed, newsletter, rating, and review integrations remain
+future implementation work.
 
 ---
 

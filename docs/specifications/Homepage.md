@@ -23,11 +23,17 @@ Visitors should be able to:
 4. Upcoming events
 5. Shop by hobby
 6. Featured products
-7. TCG singles promotion
-8. Community section
-9. Store information
-10. Newsletter
-11. Footer
+7. Why visit Gamers N Geeks
+8. Store information
+9. Community highlights
+10. Footer and newsletter treatment
+
+## Demo Implementation Status
+
+The responsive homepage presentation is substantially complete. Featured products,
+events, community highlights, and newsletter content use local demo data or visual
+treatments. Shopify collections, live calendars, Instagram feeds, newsletter
+submission, ratings, and review integrations remain future production work.
 
 ## Desktop Layout
 

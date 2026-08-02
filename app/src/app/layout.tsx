@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
+import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import "./globals.css";
 
@@ -40,14 +42,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Script
-        id="theme-initialization"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{ __html: themeInitializationScript }}
-      />
       <body className={inter.variable}>
+        <Script
+          id="theme-initialization"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: themeInitializationScript }}
+        />
+        <AnnouncementBar />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
