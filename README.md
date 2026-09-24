@@ -4,167 +4,180 @@
 
 # Gamers N Geeks Modern Website Redesign
 
-> A modern Shopify redesign concept focused on community, usability, and performance.
+> A responsive Next.js storefront redesign concept focused on usability, accessibility, performance, and a Shopify-ready migration path.
 
-![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-72C341?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-gng--concept.vercel.app-72C341?style=for-the-badge&logo=vercel)](https://gng-concept.vercel.app)
 ![Next.js](https://img.shields.io/badge/NEXT.JS-16-black?style=for-the-badge&logo=nextdotjs)
 ![React](https://img.shields.io/badge/REACT-19-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TYPESCRIPT-READY-3178C6?style=for-the-badge&logo=typescript)
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript)
 
-**Framework:** Next.js 16 • **Language:** TypeScript • **Styling:** Tailwind CSS • **Purpose:** Shopify Frontend Modernization
-
----
-
-# 📖 Overview
-
-This repository contains a complete modernization concept for the **Gamers N Geeks** website.
-
-Rather than replacing Shopify or rebuilding the backend, the objective is to improve the customer experience while preserving the existing Shopify infrastructure, TCGPlayer Pro integration, inventory management, and checkout workflows.
-
-The project serves as both a client proposal and a portfolio-quality case study demonstrating modern UX, responsive design, and frontend best practices.
+**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Vercel Analytics / Speed Insights
 
 ---
 
-# ✨ Goals
+## Overview
 
-- Modernize the customer experience
-- Preserve the Shopify ecosystem
-- Improve navigation
-- Improve product discovery
-- Highlight community events
-- Build mobile-first
-- Improve accessibility
-- Improve performance
+This repository contains an independent interactive redesign concept for **Gamers N Geeks**, a local game store in Mobile, Alabama.
 
----
+The project explores how a modern customer-facing experience could sit in front of the store's existing commerce ecosystem without replacing the business systems that already work. The demo uses local/mock data so the UX can be developed and evaluated independently from production Shopify, inventory, payment, customer, and event systems.
 
-# 🚧 Current Progress
+The result is a portfolio case study covering:
 
-| Phase | Status |
-|--------|:------:|
-| Repository Setup | ✅ |
-| Project Documentation | ✅ |
-| UX Research | ✅ |
-| Design System | ✅ |
-| Homepage Design | 🚧 |
-| Component Library | ⏳ |
-| Responsive Development | ⏳ |
-| Demo Deployment | ⏳ |
+- responsive UI development
+- reusable React component architecture
+- TypeScript-based data models
+- mobile-first navigation
+- accessibility-conscious interaction patterns
+- performance-minded image and rendering choices
+- design-system documentation
+- migration and rollback planning
+- deployment to Vercel
+
+> **Live demo:** https://gng-concept.vercel.app
 
 ---
 
-# 📂 Repository Structure
+## What the Demo Includes
+
+The current demo includes:
+
+- responsive homepage experience
+- desktop and mobile navigation
+- light/dark theme support
+- featured categories and products
+- event discovery
+- product and collection page concepts
+- store information and contact experience
+- reusable UI components
+- custom 404 experience
+- Vercel Analytics and Speed Insights
+- responsive desktop and mobile presentation assets
+
+Production integrations such as live Shopify inventory, checkout, customer accounts, event registration, newsletter delivery, and social feeds are intentionally outside this demo's scope.
+
+---
+
+## Screenshots
+
+### Desktop
+
+![Gamers N Geeks desktop homepage](./deliverables/home-v0.2-desktop01.png)
+
+### Mobile
+
+![Gamers N Geeks mobile homepage](./deliverables/home-v0.2-mobile01.png)
+
+---
+
+## Architecture
+
+The project separates application code, source assets, documentation, and presentation deliverables:
 
 ```text
-GamersNGeeks
-│
+GamersNGeeksDEMO/
 ├── app/
 │   ├── public/
 │   └── src/
-│
+│       ├── app/
+│       ├── components/
+│       └── lib/
 ├── assets/
-│   ├── branding/
-│   ├── concepts/
-│   ├── inspiration/
-│   ├── logos/
-│   ├── screenshots/
-│   └── wireframes/
-│
-├── docs/
-│
 ├── deliverables/
-│
-├── references/
-│
-└── scripts/
+└── docs/
 ```
+
+Shared interface elements are split into layout, section, theme, and reusable UI components. Demo content is represented through typed local data modules so production data sources can later replace mock data without requiring a full UI rewrite.
+
+See [ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the design and development conventions used by the project.
 
 ---
 
-# 📚 Documentation
+## Technical Highlights
+
+### Responsive component system
+
+Reusable layout and UI primitives support desktop and mobile experiences while keeping page-level code focused on composition rather than repeated markup.
+
+### Typed demo data
+
+Products, events, categories, store information, and other content are represented with TypeScript types and structured data modules.
+
+### Theme architecture
+
+Theme behavior uses semantic design tokens, CSS variables, OS preference detection, and a small isolated client-side theme control rather than requiring a large state-management dependency.
+
+### Accessibility
+
+The project targets WCAG AA practices, including semantic markup, keyboard-friendly controls, visible focus states, descriptive labels, and responsive typography.
+
+### Performance
+
+The frontend uses Next.js image handling, Server Components where practical, lazy-loading where appropriate, and Vercel Speed Insights for deployed performance visibility.
+
+### Migration-aware design
+
+The accompanying documentation considers how an approved design could move into an existing Shopify environment incrementally while preserving business operations, URLs, inventory, payments, and customer workflows.
+
+---
+
+## Documentation
 
 | Document | Purpose |
-|----------|---------|
-| PROJECT_VISION.md | Defines the overall vision and goals |
-| DESIGN_SYSTEM.md | Design language and UI standards |
-| SHOPIFY_AUDIT.md | Analysis of the existing website |
-| ROADMAP.md | Development milestones |
-| MIGRATION_PLAN.md | Future Shopify implementation strategy |
-| ARCHITECTURE.md | Technical architecture and coding standards |
-| CLIENT_NOTES.md | Ongoing observations and client feedback |
-| DESIGN_TOKENS.md | Shared colors, spacing, radii, shadows, and motion values |
+| --- | --- |
+| [PROJECT_VISION.md](./docs/PROJECT_VISION.md) | Product vision, users, goals, and scope |
+| [ARCHITECTURE.md](./docs/ARCHITECTURE.md) | Technical architecture and development standards |
+| [DESIGN_SYSTEM.md](./docs/DESIGN_SYSTEM.md) | Visual and interaction system |
+| [DESIGN_TOKENS.md](./docs/DESIGN_TOKENS.md) | Shared design tokens |
+| [SHOPIFY_AUDIT.md](./docs/SHOPIFY_AUDIT.md) | UX observations of the existing storefront |
+| [MIGRATION_PLAN.md](./docs/MIGRATION_PLAN.md) | Example incremental migration and rollback strategy |
+| [ROADMAP.md](./docs/ROADMAP.md) | Project milestones and future work |
 
 ---
 
-# 🛠 Technology Stack
+## Local Development
 
-| Technology | Purpose |
-|------------|---------|
-| Next.js 16 | Frontend Framework |
-| React 19 | UI Library |
-| TypeScript | Type Safety |
-| Tailwind CSS | Styling |
-| GitHub | Source Control |
+```bash
+git clone https://github.com/duhhbzz/GamersNGeeksDEMO.git
+cd GamersNGeeksDEMO/app
+npm install
+npm run dev
+```
 
----
-
-# 🎨 Design Philosophy
-
-Every design decision follows one guiding principle:
-
-> **Build a website that feels like walking into an amazing local game store.**
-
-The redesign emphasizes:
-
-- Community before commerce
-- Mobile-first experiences
-- Clear navigation
-- Fast performance
-- Modern visuals
-- Accessibility
-- Respect for the existing brand
-
----
-
-# 🚀 Planned Features
-
-- Responsive homepage
-- Sticky navigation
-- Mega menu
-- Event hub
-- Featured collections
-- Product spotlight sections
-- Community showcase
-- Store information
-- Improved search
-- Better mobile navigation
-- Accessibility improvements
-- Performance optimization
-
----
-
-# 🗺 Roadmap
+Then open:
 
 ```text
-Sprint 0  ✅ Foundation
-Sprint 1  🚧 UI Framework
-Sprint 2  ⏳ Homepage
-Sprint 3  ⏳ Shopping Experience
-Sprint 4  ⏳ Community & Events
-Sprint 5  ⏳ Mobile Polish
-Sprint 6  ⏳ Client Presentation
+http://localhost:3000
+```
+
+Useful commands:
+
+```bash
+npm run dev
+npm run lint
+npm run build
+npm start
 ```
 
 ---
 
-# ⚠ Disclaimer
+## Current Status
 
-This repository contains an independent redesign concept created for educational, portfolio, and demonstration purposes.
+The interactive redesign demo is deployed and usable as a portfolio case study.
 
-All trademarks, logos, product names, and intellectual property belong to their respective owners.
+The repository remains an evolving concept project. Future work may include additional page coverage, automated CI validation, expanded accessibility testing, further performance optimization, and deeper Shopify implementation research.
 
-No affiliation with or endorsement by **Gamers N Geeks** is implied.
+No production Shopify credentials, customer data, payment information, or live store integrations are required by this demo.
 
 ---
 
-**Built with ⚔️Passion & Might👾 using Next.js, React, TypeScript, and Tailwind CSS.**
+## Disclaimer
+
+This is an **independent, non-production redesign concept** created for educational, portfolio, and demonstration purposes.
+
+It is not the official Gamers N Geeks website and does not imply affiliation with, endorsement by, or authorization from Gamers N Geeks.
+
+Gamers N Geeks branding, trademarks, product names, and other third-party intellectual property remain the property of their respective owners.
+
+---
+
+**Designed and developed by David Sweatt**
