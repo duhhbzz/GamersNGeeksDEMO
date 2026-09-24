@@ -11,8 +11,11 @@
 > A responsive Next.js storefront redesign concept focused on usability, accessibility, performance, and a Shopify-ready migration path.
 
 <p align="center">
+  <a href="https://gng.davidtroi.com">
+    <img alt="Live Demo" src="https://img.shields.io/badge/demo-gng.davidtroi.com-72C341">
+  </a>
   <a href="https://gng-concept.vercel.app">
-    <img alt="Live Demo" src="https://img.shields.io/badge/demo-live-72C341">
+    <img alt="Vercel Fallback" src="https://img.shields.io/badge/fallback-Vercel-black">
   </a>
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-black">
   <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB">
@@ -41,7 +44,8 @@ The result is a portfolio case study covering:
 - migration and rollback planning
 - deployment to Vercel
 
-> **Live demo:** https://gng-concept.vercel.app
+> **Live demo:** https://gng.davidtroi.com  
+> **Fallback:** https://gng-concept.vercel.app
 
 ---
 
