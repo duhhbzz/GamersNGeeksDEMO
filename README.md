@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="./assets/branding/logos/gng_logo_nooutline-original.png" alt="Gamers N Geeks Logo" width="500">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/branding/logos/gng_logo_nooutline-original-DARKMODE.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/branding/logos/gng_logo_nooutline-original.png">
+    <img src="./assets/branding/logos/gng_logo_nooutline-original.png" alt="Gamers N Geeks Logo" width="500">
+  </picture>
 </p>
 
 # Gamers N Geeks Modern Website Redesign
