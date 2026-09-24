@@ -6,12 +6,16 @@
 
 > A responsive Next.js storefront redesign concept focused on usability, accessibility, performance, and a Shopify-ready migration path.
 
-[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-gng--concept.vercel.app-72C341?style=for-the-badge&logo=vercel)](https://gng-concept.vercel.app)
-![Next.js](https://img.shields.io/badge/NEXT.JS-16-black?style=for-the-badge&logo=nextdotjs)
-![React](https://img.shields.io/badge/REACT-19-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript)
-
-**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Vercel Analytics / Speed Insights
+<p align="center">
+  <a href="https://gng-concept.vercel.app">
+    <img alt="Live Demo" src="https://img.shields.io/badge/demo-live-72C341">
+  </a>
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-black">
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4">
+  <img alt="Vercel" src="https://img.shields.io/badge/Vercel-Analytics%20%2B%20Speed%20Insights-black">
+</p>
 
 ---
 
